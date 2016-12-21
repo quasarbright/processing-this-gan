@@ -10,7 +10,7 @@ class RectButton {
     int G = 0;
     int B = 0;
     String word;
-    boolean clicked = false;
+    boolean shouldDo = true;
     RectButton(String word, float x,float y, float w,float h){
         this.word = word;
         this.x = x;
@@ -46,20 +46,12 @@ class RectButton {
     }
     
     boolean isClicked(){
-        if (mouseClicked){
-            clicked = true;
-            return isIn(mouseX, mouseY);
-        }
-        return false;
-    }
-    
-    boolean isReleased(){
-        if(clicked && !mousePressed){
-            clicked = false;
+        if (mouseClicked && isIn){
+            shouldDo = false;
             return true;
         }
+        shouldDo = true;
         return false;
-            
     }
     
     boolean isHovering(){
