@@ -45,8 +45,8 @@ class RectButton {
         return xin && yin;
     }
     
-    boolean isClicked(){
-        if (mouseClicked && isIn){
+    boolean isClicked(){//use if (isClicked() && shouldDo) for button activation
+        if (mousePressed && isIn){
             shouldDo = false;
             return true;
         }
@@ -55,14 +55,13 @@ class RectButton {
     }
     
     boolean isHovering(){
-        if(!mouseClicked)
+        if(!mousePressed)
             return isIn(mouseX,mouseY);
+        return false;
     }
     
-    
-    
     /**
-     * 
+     * shows button and tests for click events
      */
     void show(){
         if(isHovering())
@@ -75,7 +74,7 @@ class RectButton {
         //text needed
         
         
-        fill(R,G,B);//last thing
+        fill(R,G,B);//last thing done to reset color
     }
     
 }
