@@ -45,7 +45,7 @@ class RectButton {
         return xin && yin;
     }
     
-    boolean isClicked(){//use if (isClicked() && shouldDo) for button activation
+    boolean isClicked(){//use if (isClicked() && shouldDo) BEFORE show() for button activation
         if (mousePressed && isIn){
             shouldDo = false;
             return true;
@@ -66,7 +66,7 @@ class RectButton {
     void show(){
         if(isHovering())
             fill(153,50);
-        else if(isClicked())
+        if(isClicked())
             fill(0,157,255);
             
         rect(x,y,w,h);
