@@ -1,0 +1,2 @@
+An example of use of button class. Displays button that when clicked changes the background to a random shade of blue.Note order of calls
+such as lstening for click BEFORE using button.show(). This is due to the setting false of shouldDo when isClicked() called.
