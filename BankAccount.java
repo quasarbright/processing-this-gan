@@ -9,7 +9,7 @@ package BankAccount;
  */
 public class BankAccount {
     private String name;
-    private double balance, interest; //interest default
+    private double balance;
     
     public BankAccount(String myName, double myBalance){
         name = myName;
@@ -18,6 +18,10 @@ public class BankAccount {
     
     public String toString(){
         return "name: "+name+". balance: $"+balance+". interest: "+interest;
+    }
+    
+    public void withdraw(double money) {
+        balance = balance - money;
     }
     
     public void deposit(double money){
