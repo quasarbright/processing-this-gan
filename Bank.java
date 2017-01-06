@@ -7,7 +7,7 @@
  */
  public class Bank{
     public static void main(String[] args){
-    	BankAccount treefiddy = new BankAccount("Treefiddy", 31.41);
+    	BankAccount treeFiddy = new BankAccount("Tree Fiddy", 31.41);
     	BankAccount unravel = new BankAccount("Kaneki", 993.00);
      
     }
