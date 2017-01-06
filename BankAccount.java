@@ -13,7 +13,7 @@ public class BankAccount {
      * Constructor. Creates a bank account with a name and balance
      *
      * @param String myName  the account owner's name
-     * @param duoble myBalance  the account balance
+     * @param double myBalance  the account balance
      */
     public BankAccount(String myName, double myBalance){
         name = myName;
