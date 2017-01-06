@@ -1,6 +1,4 @@
-package BankAccount;
-
-/*
+/**
  * Bank Account object
  * 
  * @author Mike Delmonaco
