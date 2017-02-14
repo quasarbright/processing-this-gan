@@ -13,15 +13,46 @@ public class AscendingStrings {
     public static String one(String num,String prev, boolean atStart){
         if(atStart){
             for(int i = 0;i<num.length();i++){
-                
+                if( Integer.parseInt(num.substring(0,i+1)) > Integer.parseInt(prev))
+                    return num.substring(0,i+1);
             }
         }
         else{
-            
+            for(int i = num.length()-1;i>=0;i--){
+                if( Integer.parseInt(num.substring(i,num.length())) > Integer.parseInt(prev))
+                    return num.substring(i,num.length());
+            }
         }
+        return "duque";
+    }
+    public static int cutLength(String num,String prev, boolean atStart){
+        if(atStart){
+            for(int i = 0;i<num.length();i++){
+                if( Integer.parseInt(num.substring(0,i+1)) > Integer.parseInt(prev))
+                    return num.substring(0,i+1).length();
+            }
+        }
+        else{
+            for(int i = num.length()-1;i>=0;i--){
+                if( Integer.parseInt(num.substring(i,num.length())) > Integer.parseInt(prev))
+                    return num.substring(i,num.length()).length();
+            }
+        }
+        return -1;
     }
     public static ArrayList<Integer> process(String num){
         ArrayList<Integer> nums = new ArrayList<>();
+        boolean atStart = false;
+        String prev = num.substring(0,1);
+        num = num.substring(1);
+        int len = 1;
+        while(!prev.equals("duque") && len != -1 && cutLength(num,prev,atStart)!=-1 && !one(num,prev,atStart).equals("duque")){
+            
+            prev = one(num,prev,atStart);//change stuff, append, etc
+            len = cutLength(num,prev,atStart);
+            
+        }
+        
         
     }
     
