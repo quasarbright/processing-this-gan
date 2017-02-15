@@ -55,7 +55,10 @@ public class AscendingStrings {
             if(atStart){
                 num = num.substring(len-1);
             }
-            atStart = !atStart
+            else{
+                num = num.substring(0,num.length()-len+1);
+            }
+            atStart = !atStart;
         }
         
         
@@ -65,6 +68,6 @@ public class AscendingStrings {
     public static void main(String[] args) {
         ArrayList<Integer> nums = new ArrayList<>();
         String num = "31415926538";//should have an arrayList later
-        
+        nums = process(num);
     }
 }
