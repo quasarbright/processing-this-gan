@@ -44,13 +44,18 @@ public class AscendingStrings {
         ArrayList<Integer> nums = new ArrayList<>();
         boolean atStart = false;
         String prev = num.substring(0,1);
+        nums.add(prev);
         num = num.substring(1);
         int len = 1;
         while(!prev.equals("duque") && len != -1 && cutLength(num,prev,atStart)!=-1 && !one(num,prev,atStart).equals("duque")){
             
             prev = one(num,prev,atStart);//change stuff, append, etc
+            nums.add(prev);
             len = cutLength(num,prev,atStart);
-            
+            if(atStart){
+                num = num.substring(len-1);
+            }
+            atStart = !atStart
         }
         
         
