@@ -21,6 +21,10 @@ public class CheckingAccount extends BankAccount {
         transNum = myTransNum;
     }
     
+    public void deposit(super money) {
+        transNum++;
+    }
+  
     public String toString(){
         return super()+". transactions: "+transNum;
     }
