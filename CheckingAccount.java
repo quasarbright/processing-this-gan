@@ -21,4 +21,12 @@ public class CheckingAccount extends BankAccount {
         transNum = myTransNum;
     }
     
+    public String toString(){
+        return super()+". transactions: "+transNum;
+    }
+    
+    public void endOfMonth(){
+        System.out.println(transNum*.5);
+    }
+    
 }
