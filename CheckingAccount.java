@@ -65,11 +65,11 @@ public class CheckingAccount extends BankAccount {
     /**
      * ends the month and returns monthly cost
      * for transaction fee
-     * 
-     * @return transaction fee
      */
-    public double endOfMonth(){
-        return transNum*.5;
+    public void endOfMonth(){
+        super.withdraw(transNum*.5);
+        //balance is private so it's a
+        //workaround that doesn't change transNum
     }
     
 }
