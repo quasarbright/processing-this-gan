@@ -3,7 +3,7 @@ package BankAccount;
 /**
  * creates a bank account object
  * 
- * @author mdelmonaco
+ * @author mike delmonaco steve milonas
  * @version 2-16-17
  */
 public class CheckingAccount extends BankAccount {
@@ -21,14 +21,51 @@ public class CheckingAccount extends BankAccount {
         transNum = myTransNum;
     }
     
-    public void deposit(super money) {
+    /**
+     * deposits money from account
+     * 
+     * @param money money to be deposited
+     */
+    @Override
+    public void deposit(double money) {
+        super.deposit(money);
         transNum++;
     }
-  
-    public String toString(){
-        return super()+". transactions: "+transNum;
+    
+    /**
+     * withdraws money from account
+     * 
+     * @param money money to be withdrawn
+     */
+    @Override
+    public void withdraw(double money){
+        super.withdraw(money);
+        transNum++;
     }
     
+    /**
+     * represents object as a string
+     * 
+     * @return name, balance, number of transactions
+     */
+    @Override
+    public String toString(){
+        return super.toString()+". transactions: "+transNum;
+    }
+    
+    /**
+     * number of transactions
+     * 
+     * @return number of transactions
+     */
+    public int getTransNum(){
+        return transNum;
+    }
+    
+    /**
+     * ends the month and prints monthly cost
+     * for transaction fee
+     */
     public void endOfMonth(){
         System.out.println(transNum*.5);
     }
