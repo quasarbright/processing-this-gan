@@ -63,11 +63,13 @@ public class CheckingAccount extends BankAccount {
     }
     
     /**
-     * ends the month and prints monthly cost
+     * ends the month and returns monthly cost
      * for transaction fee
+     * 
+     * @return transaction fee
      */
-    public void endOfMonth(){
-        System.out.println(transNum*.5);
+    public double endOfMonth(){
+        return transNum*.5;
     }
     
 }
