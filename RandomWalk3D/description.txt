@@ -1,0 +1,9 @@
+A 3D random walk starts at the origin and at every step,
+it chooses either up, down, left, right, forward, or
+backward randomly and takes a step in that direction.
+I drew the path of the walk and made older parts more
+transparent. I also made 10 walkers each with different
+colors. When a walker reaches the boundary, it is sent 
+backto the origin, given a new color, and its history is
+wiped. I added automatic rotation to the 3D camera, but
+you can pan and zoom with your mouse.
