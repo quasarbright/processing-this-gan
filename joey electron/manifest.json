@@ -4,6 +4,6 @@
      "version": "0.002",
      "content_scripts": [{
          "matches": ["<all_urls>"],
-         "js": ["script.js"]
+         "js": ["conversions.js","findAndReplaceDOMText.js","script.js"]
      }]
  }
