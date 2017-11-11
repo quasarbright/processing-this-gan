@@ -1,7 +1,7 @@
 # Joey Electronstension  
 This chrome extension replaces the words you see on webpages with specific memes. This will not tamper with HTML tag properties such as the destination of links and it should work on all HTML text so if you can highlight the text it should convert if it is a trigger for a meme.  
 # Installation: easy method (.crx)  
-1. Download the most recent chrome extension file (joey electron #.###.crx)  
+1. Download the most recent chrome extension file (joey electron.crx)  
 2. (In chrome) type chrome://extensions in the top bar. Hit enter.  
 3. If the download is still at the bottom of your chrome window drag and drop it into the extensions page. If it's not at the bottom of the screen, go to where you downloaded it in your file library and drag and drop it into the extensions page but come back to the instructions after.  
 4. If you see something about extensions harming your computer, make sure you are in chrome and the top bar says chrome://extensions and you're on the extensions page and try again. When you are about do drop it it should say move, not copy.  
