@@ -1,5 +1,7 @@
 let conversions = {
     replacements: [
+        ["flip a coin", "roll a quarter"],
+        ["search for a better life", "buscar una vida mejor"],
         [" a ", " an "],
         ["^((?!joey ))electron", "joey electron"],
         ["the best song", ["unravel", "russian national anthem", "H3H3 theme", "anything from the NieR: Automata soundtrack"]],
@@ -18,7 +20,7 @@ let conversions = {
         ["kevin zhou", "ricegum"],
         ["God", ["El Duque", "Ryan Jizmus", "Cork", "ya boi Joey Electron","lucio"]],
         ["lawyer", "Feit's Mom in the past life"],
-        ["search for a better life", "buscar una vida mejor"],
+
         ["better life", "vida mejor"],
         ["rick and morty", ["Rich and Marvin", "quantum physics", "theoretical physics"]],
         ["albert einstein", ["someone who understands the subtle humor of rick and morty", "10th grade delmonaco", "a 12 year old after watching death note"]],
@@ -26,7 +28,6 @@ let conversions = {
         ["^((?!aka )|(?!neutron from ))jimmy neutron", "jonny quasar aka jimmy neutron from jimmy neutron: boy genius"],
         ["berke", "beaver"],
         ["lucio", "jamaica"],
-        ["flip a coin", "roll a quarter"],
         ["international baccalaureate", "some welsh organization that makes explicit/demonstrates and destroys lives, hopes, and will to live to a large extent in a formal or informal manner"],
         ["entonces", "entonthes"],
         [" so ", " entonthes "],
@@ -73,7 +74,7 @@ let conversions = {
         ["shit", ["mobile games", "you at smash", "bobby's mei and zarya", "literally every mobile game except hearthstone", "vital emotion's value as a person"]],
         ["bop", "greninja teleport"],
         ["lesbian", "sneeze"],
-        ["if", "iuf"],
+        [" if ", " iuf "],
         ["^((?!fucking ))gay", ["justin simonetti", "you", "fucking gay"]],
         ["never", ["when bobby will get his pc", "when Feit will not be overweight", "when Feit will be open minded", "when aidan will have an identity", "when Jack/Feit will change his mind","when Feit's mom was wrong(she was a lawyer in the past life you know)","when vital emotion will be successful"]],
         ["what men want",["cloutonium","kevin's famouts chili","dekapai","more proofs","more rich and marvin","foot pics for 500"]],
