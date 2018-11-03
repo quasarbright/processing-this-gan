@@ -24,7 +24,6 @@ let conversions = {
         ["albert einstein", ["someone who understands the subtle humor of rick and morty", "10th grade delmonaco", "a 12 year old after watching death note"]],
         ["theoretical physics", "rick and morty"],
         ["^((?!aka )|(?!neutron from ))jimmy neutron", "jonny quasar aka jimmy neutron from jimmy neutron: boy genius"],
-        ["berke", "beaver"],
         ["lucio", "jamaica"],
         ["international baccalaureate", "some welsh organization that makes explicit/demonstrates and destroys lives, hopes, and will to live to a large extent in a formal or informal manner"],
         ["entonces", "entonthes"],
